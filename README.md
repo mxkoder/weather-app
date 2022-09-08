@@ -1,3 +1,14 @@
+# Weather App
+
+## additional setup notes
+
+- made with the Create React App, see below for scripts to run & test the app
+- using the Airbnb style guide, without enforcing strict use of .jsx for JSX, and instead being able to use .jsx or .js
+- uses prettier
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

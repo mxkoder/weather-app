@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 
 // <App />
-function App(props) {
-  const { city, country } = props;
+function App({ location }) {
+  const { city, country } = location;
   return (
     <div className="App">
       <LocationDetails city={city} country={country} />

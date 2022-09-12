@@ -2,7 +2,7 @@ import "../styles/App.css";
 import React from "react";
 import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
-import ForecastSummary from "./ForecastSummary";
+//import ForecastSummary from "./ForecastSummary";
 
 // <App />
 function App({ location }) {
@@ -14,18 +14,18 @@ function App({ location }) {
   );
 }
 
-function Forecast({ forecast }) {
-  const { date, description, temperature} = forecast;
-  return (
-    <div className="ForecastSummery">
-      <ForecastSummary
-        date={date}
-        description={description}
-        maxTemp={temperature.max}
-      />
-    </div>
-  );
-}
+// function Forecast({ forecast }) {
+//   const { date, description, temperature} = forecast;
+//   return (
+//     <div className="ForecastSummery">
+//       <ForecastSummary
+//         date={date}
+//         description={description}
+//         maxTemp={temperature.max}
+//       />
+//     </div>
+//   );
+// }
 
 App.propTypes = {
   location: PropTypes.shape({
@@ -33,7 +33,6 @@ App.propTypes = {
     country: PropTypes.string,
   }).isRequired,
 };
-
 
 // forecast: PropTypes.shape({
 //   date: PropTypes.instanceOf(Date),

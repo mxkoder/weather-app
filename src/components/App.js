@@ -10,7 +10,7 @@ function App({ location, forecasts }) {
   return (
     <div className="App">
       <LocationDetails city={city} country={country} />
-      <ForecastSummaries forecast={forecasts} />
+      <ForecastSummaries forecasts={forecasts} />
     </div>
   );
 }

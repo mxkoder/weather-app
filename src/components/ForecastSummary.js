@@ -18,6 +18,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+import WeatherIcon from "react-icons-weather";
 
 function ForecastSummary(props) {
   const { date, description, icon, temperature } = props;
@@ -26,7 +27,7 @@ function ForecastSummary(props) {
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{date}</div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
-        {icon}
+        <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="forecast-summary__temperature">
         {temperature.max}&deg;C

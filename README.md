@@ -84,3 +84,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## To do future:
 - compas icon for wind direction
+- add more tests to App.test.js
+- check weather icons are accessible

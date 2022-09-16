@@ -1,21 +1,3 @@
-// import React from "react";
-// import PropTypes from "prop-types";
-
-// function ForecastSummary(props) {
-//   const { date, description, maxTemp } = props; //add icon later
-//   return (
-//     <p>{`date: ${date}, details: ${description}, max Temperature: ${maxTemp}&#8451;, icon: `}</p>
-//   );
-// }
-
-// ForecastSummary.propTypes = {
-//   date: PropTypes.instanceOf(Date),
-//   description: PropTypes.string.isRequired,
-//   maxTemp: PropTypes.number.isRequired,
-// };
-
-// export default ForecastSummary;
-
 import React from "react";
 import PropTypes from "prop-types";
 import WeatherIcon from "react-icons-weather";

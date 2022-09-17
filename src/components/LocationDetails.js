@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function LocationDetails(props) {
   const { city, country } = props;
-  return <h1>{`${city}, ${country}`}</h1>;
+  return <h1 data-testid="h1-LocationDetails">{`${city}, ${country}`}</h1>;
 }
 
 LocationDetails.propTypes = {

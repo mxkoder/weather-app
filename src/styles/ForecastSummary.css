@@ -1,0 +1,8 @@
+.forecast-summary {
+    text-align: center;
+}
+
+.forecast-summary__icon {
+    font-size: 4rem;
+    padding: 0.5rem;
+}

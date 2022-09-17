@@ -26,21 +26,21 @@ describe("ForecastDetails", () => {
   it("renders correct values for props", () => {
     const { getByText } = render(<ForecastDetails forecast={validProps} />);
 
-    expect(getByText("Mon Apr 30 2018")).toHaveClass("forecast-summary__date");
+    expect(getByText("Mon Apr 30 2018")).toHaveClass("forecast-details__date");
     expect(getByText("Max Temperature: 22°C")).toHaveClass(
-      "forecast-summary__max-temperature"
+      "forecast-details__max-temperature"
     );
     expect(getByText("Min Temperature: 12°C")).toHaveClass(
-      "forecast-summary__min-temperature"
+      "forecast-details__min-temperature"
     );
     expect(getByText("Humidity: 30%")).toHaveClass(
-      "forecast-summary__humidity"
+      "forecast-details__humidity"
     );
     expect(getByText("Wind Speed: 40 mph")).toHaveClass(
-      "forecast-summary__wind-speed"
+      "forecast-details__wind-speed"
     );
     expect(getByText("Wind Direction: s")).toHaveClass(
-      "forecast-summary__wind-direction"
+      "forecast-details__wind-direction"
     );
   });
 });

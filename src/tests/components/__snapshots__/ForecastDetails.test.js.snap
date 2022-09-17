@@ -3,36 +3,36 @@
 exports[`ForecastDetails renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="forecast-summary"
+    class="forecast-details"
     data-testid="forecast-summary"
   >
     <div
-      class="forecast-summary__date"
+      class="forecast-details__date"
     >
       Mon Apr 30 2018
     </div>
     <div
-      class="forecast-summary__max-temperature"
+      class="forecast-details__max-temperature"
     >
       Max Temperature: 22°C
     </div>
     <div
-      class="forecast-summary__min-temperature"
+      class="forecast-details__min-temperature"
     >
       Min Temperature: 12°C
     </div>
     <div
-      class="forecast-summary__humidity"
+      class="forecast-details__humidity"
     >
       Humidity: 30%
     </div>
     <div
-      class="forecast-summary__wind-speed"
+      class="forecast-details__wind-speed"
     >
       Wind Speed: 40 mph
     </div>
     <div
-      class="forecast-summary__wind-direction"
+      class="forecast-details__wind-direction"
     >
       Wind Direction: s
     </div>

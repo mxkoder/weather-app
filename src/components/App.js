@@ -5,30 +5,41 @@ import React, { useState, useEffect } from "react";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
+import SearchForm from "./SearchForm";
 import getForecast from "../requests/getForecast";
 
 function App() {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
+  const [searchText, setSearchText] = useState("");
 
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
 
+  useEffect(() => {
+    getForecast(setSelectedDate, setForecasts, setLocation);
+  }, []);
+
   const handleForecastSelect = (date) => {
     setSelectedDate(date);
   };
 
-  useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
-  }, []); // will be called when component is first mounted
+  const handleCitySearch = () => {
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+  };
 
   const { city, country } = location;
 
   return (
     <div className="weather-app">
       <LocationDetails city={city} country={country} />
+      <SearchForm
+        searchText={searchText}
+        setSearchText={setSearchText}
+        onSubmit={handleCitySearch}
+      />
       <ForecastSummaries
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
@@ -37,23 +48,5 @@ function App() {
     </div>
   );
 }
-
-// App.propTypes = {
-//   forecasts: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       date: PropTypes.number,
-//       description: PropTypes.string,
-//       icon: PropTypes.string,
-//       temperature: PropTypes.shape({
-//         max: PropTypes.number,
-//         min: PropTypes.number,
-//       }),
-//     })
-//   ).isRequired,
-//   location: PropTypes.shape({
-//     city: PropTypes.string,
-//     country: PropTypes.string,
-//   }).isRequired,
-// };
 
 export default App;

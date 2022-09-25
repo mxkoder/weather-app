@@ -12,7 +12,7 @@ const getForecast = (
   console.log("searchText=====>", searchText);
 
   // need to change back to 'if (searchText) when rest of app is working
-  if (typeof searchText !== "function") {
+  if (searchText) {
     endpoint += `?city=${searchText}`;
   }
 

@@ -19,7 +19,7 @@ function App() {
   );
 
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
+    getForecast("", setSelectedDate, setForecasts, setLocation);
   }, []);
 
   const handleForecastSelect = (date) => {

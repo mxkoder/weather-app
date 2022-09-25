@@ -1,17 +1,18 @@
+[note for reviewer: I got up to step 35 on the track for this project, and am submitting it at this stage to get feedback as I move on to the next part of the course.]
+
 # Weather App
 
-## additional setup notes
+## About
+I created this project as part of the [Manchester Codes](https://www.manchestercodes.com/) software engineering course. The objective was to learn how to make a basic React app and get started using the React Testing Library.
 
-- made with the Create React App, see below for scripts to run & test the app
-- using the Airbnb style guide, without enforcing strict use of .jsx for JSX, and instead being able to use .jsx or .js
-- uses prettier
+The weather app connects to a custom API and lets the used get a five day weather forecast for the city of their choice. There's a 'details' button under each daily forecast which shows a more detailed summary for that day when clicked. 
 
+![React Weather App](/images/weather-app-readme.png)
 
+## Setup notes
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project is made with the Create React App, see below for scripts to run & test the app
+It uses the Airbnb style guide, without enforcing strict use of .jsx for JSX, and instead being able to use .jsx or .js
 
 ## Available Scripts
 
@@ -82,7 +83,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-## To do future:
-- compas icon for wind direction
-- add more tests to App.test.js
-- check weather icons are accessible
+## Future work on this project:
+
+### Functionality & appearance
+- Improve responsiveness and make a mobile friendly version, improve design
+- Add compas icons for wind direction
+- Check for accessibility and make sure that there is alt text / aira labels for all icons used. 
+- Add error handling
+
+### Testing
+- Add more tests to App.test.js
+- Write tests for <SearchForm />
+
+
+## Author
+
+Agnes Beviz
+
+[website](https://agnesbeviz.co.uk/) ｜ [twitter](https://twitter.com/mx_coder_) ｜ [linkedin](https://www.linkedin.com/in/agnes-beviz/)

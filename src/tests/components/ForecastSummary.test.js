@@ -3,11 +3,10 @@ import { render } from "@testing-library/react";
 import ForecastSummary from "../../components/ForecastSummary";
 
 describe("ForecastSummary", () => {
-  // snapshot:
   const validProps = {
     date: 1525046400000,
     description: "Stub description",
-    icon: "200", // "stubIcon"
+    icon: "200",
     temperature: {
       min: 12,
       max: 22,

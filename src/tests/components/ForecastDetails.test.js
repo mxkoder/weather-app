@@ -3,7 +3,6 @@ import { render } from "@testing-library/react";
 import ForecastDetails from "../../components/ForecastDetails";
 
 describe("ForecastDetails", () => {
-  // snapshot:
   const validProps = {
     date: 1525046400000,
     temperature: {

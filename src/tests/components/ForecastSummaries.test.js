@@ -24,7 +24,7 @@ describe("ForecastSummaries", () => {
         },
       },
     ],
-    onForecastSelect: () => {},
+    onForecastSelect: jest.mock(), // mock instead of () => {}
   };
 
   it("renders correctly", () => {

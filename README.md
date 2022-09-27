@@ -87,13 +87,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Functionality & appearance
 - Improve responsiveness and make a mobile friendly version, improve design
-- Add compas icons for wind direction
+- Add compass icons for wind direction
 - Check for accessibility and make sure that there is alt text / aira labels for all icons used. 
 - Add error handling
 
 ### Testing
 - Add more tests to App.test.js
-- Write tests for <SearchForm />
+- Write tests for 'SearchForm' component
 
 
 ## Author

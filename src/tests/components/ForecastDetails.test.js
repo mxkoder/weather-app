@@ -38,8 +38,5 @@ describe("ForecastDetails", () => {
     expect(getByText("Wind Speed: 40 mph")).toHaveClass(
       "forecast-details__wind-speed"
     );
-    expect(getByText("Wind Direction: s")).toHaveClass(
-      "forecast-details__wind-direction"
-    );
   });
 });

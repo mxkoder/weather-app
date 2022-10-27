@@ -12,7 +12,7 @@ import {
 } from "react-icons/wi";
 import "../styles/ForecastDetails.css";
 
-function ForecastDetails({ forecast }) {
+const ForecastDetails = ({ forecast }) => {
   const { date, temperature, wind, humidity } = forecast;
 
   const formattedDate = new Date(date).toDateString();
@@ -60,7 +60,7 @@ function ForecastDetails({ forecast }) {
       </div>
     </div>
   );
-}
+};
 
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({

@@ -8,7 +8,7 @@ import ForecastDetails from "./ForecastDetails";
 import SearchForm from "./SearchForm";
 import getForecast from "../requests/getForecast";
 
-function App() {
+const App = () => {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
@@ -47,6 +47,6 @@ function App() {
       {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
     </div>
   );
-}
+};
 
 export default App;

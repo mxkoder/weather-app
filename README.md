@@ -1,5 +1,3 @@
-[note for reviewer: I got up to step 35 on the track for this project, and am submitting it at this stage to get feedback as I move on to the next part of the course.]
-
 # Weather App
 
 ## About
